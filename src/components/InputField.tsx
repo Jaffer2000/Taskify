@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import "./styles.css";
 
-// minute 40 of tutorial
-
 interface Props {
   todo: string;
   setTodo: React.Dispatch<React.SetStateAction<string>>;
