@@ -3,7 +3,6 @@ import { Todo } from "../model";
 import { AiFillEdit, AiFillDelete } from "react-icons/ai";
 import { MdDone } from "react-icons/md";
 import "./styles.css";
-import TodoList from "./TodoList";
 
 type Props = {
   todo: Todo;
@@ -66,13 +65,13 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
             }
           }}
         >
-          <AiFillEdit />
+          {AiFillEdit({})}
         </span>
         <span className="icon" onClick={() => handleDelete(todo.id)}>
-          <AiFillDelete />
+          {AiFillDelete({})}
         </span>
         <span className="icon" onClick={() => handleDone(todo.id)}>
-          <MdDone />
+          {MdDone({})}
         </span>
       </div>
     </form>
